@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classroom Wall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🚀 Classroom Wall</h1>
+
+  <div class="stats">
+
+    <div class="card">
+      <span id="visits">0</span>
+      <small>Visite</small>
+    </div>
+
+    <div class="card">
+      <span id="likes">0</span>
+      <small>Like</small>
+    </div>
+
+  </div>
+
+  <div class="section">
+
+    <label>Messaggio condiviso</label>
+
+    <textarea id="messageInput"></textarea>
+
+    <button id="saveMessageBtn">
+      Salva messaggio
+    </button>
+
+  </div>
+
+  <div class="section">
+
+    <button id="likeBtn">
+      👍 Like
+    </button>
+
+    <button id="resetBtn">
+      🔄 Reset
+    </button>
+
+  </div>
+
+  <div class="section">
+
+    <p>Stato della classe</p>
+
+    <button data-mood="curious">
+      Curiosi
+    </button>
+
+    <button data-mood="confused">
+      Confusi
+    </button>
+
+    <button data-mood="ready">
+      Pronti al deploy
+    </button>
+
+  </div>
+
+  <div class="footer">
+    Ultimo aggiornamento:
+    <span id="updatedAt"></span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
